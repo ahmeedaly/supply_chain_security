@@ -35,6 +35,12 @@ jobs:
         name: sbom-report
         path: | 
           sbom.xml
+
+    - name: Upload SBOM Artifact SPDX
+      uses: actions/upload-artifact@v4
+      with:
+        name: spdx-report
+        path: | 
           spdx.json
 
     # - name: Upload SBOM Artifact
